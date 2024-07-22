@@ -1,0 +1,12 @@
+Propagations:
+  - Name: getTensor
+    DstArgs: [0]
+
+  - Name: relu
+    SrcArgs: [0]
+    DstArgs: [1]
+
+Sinks:
+  - Name: outputResult
+    Args: [0]
+
