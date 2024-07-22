@@ -1,8 +1,8 @@
 The following steps assume that a terminal has been opened with its working directory set as the same directory this README resides within.
 
 ## Execute Taint Analysis on Example Code
-`CodeChecker log --build "make" --output ./compile_commands.json`<br />
-`CodeChecker analyze ./compile_commands.json --output ./reports --enable sensitive --checker-config clangsa:alpha.security.taint.TaintPropagation:Config=taint-config.yaml`<br />
+1. `CodeChecker log --build "make" --output ./compile_commands.json`<br />
+2. `CodeChecker analyze ./compile_commands.json --output ./reports --enable sensitive --checker-config clangsa:alpha.security.taint.TaintPropagation:Config=taint-config.yaml`<br />
 
 ## Visualize Results as html
 `CodeChecker parse --export html --output ./reports_html ./reports`<br />
@@ -10,8 +10,8 @@ Navigate to the newly created reports_html folder and open the desired .html fil
 
 ## Visualize Results in Browser
 In a separate terminal, execute:<br />
-`source ~/codechecker/venv/bin/activate`<br />
-`CodeChecker server --workspace .ws --port 8555`<br />
+1. `source ~/codechecker/venv/bin/activate`<br />
+2. `CodeChecker server --workspace .ws --port 8555`<br />
 In your original terminal window, run:<br />
 `CodeChecker store ./reports --name <report_name> --url http://localhost:8555/Default`<br />
 Then visit http://localhost:8555/Default in your browser.<br />
