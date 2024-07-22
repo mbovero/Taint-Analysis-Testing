@@ -12,7 +12,7 @@ Navigate to the newly created reports_html folder and open the desired .html fil
 In a separate terminal, execute:<br />
 1. `source ~/codechecker/venv/bin/activate`<br />
 2. `CodeChecker server --workspace .ws --port 8555`<br />
-In your original terminal window, run:<br />
+<a/>In your original terminal window, run:<br />
 `CodeChecker store ./reports --name <report_name> --url http://localhost:8555/Default`<br />
 Then visit http://localhost:8555/Default in your browser.<br />
 
