@@ -2,7 +2,9 @@ The following steps assume that a terminal has been opened with its working dire
 
 ## Execute Taint Analysis on Example Code
 1. `CodeChecker log --build "make" --output ./compile_commands.json`<br />
-2. `CodeChecker analyze ./compile_commands.json --output ./reports --enable sensitive --checker-config clangsa:alpha.security.taint.TaintPropagation:Config=taint-config.yaml`<br />
+2. Run static taint analysis with the Cross Translation Unit tool (a) or without the CTU tool (b) <br />
+   a) `CodeChecker analyze ./compile_commands.json --output ./reports --enable sensitive --checker-config clangsa:alpha.security.taint.TaintPropagation:Config=taint-config.yaml --ctu`<br />
+   b)`CodeChecker analyze ./compile_commands.json --output ./reports --enable sensitive --checker-config clangsa:alpha.security.taint.TaintPropagation:Config=taint-config.yaml`<br />
 
 ## Visualize Results as html
 `CodeChecker parse --export html --output ./reports_html ./reports`<br />
@@ -24,4 +26,5 @@ Storing reports on your server under names/directories that already exist will n
 
 ## Sources
 https://codechecker.readthedocs.io/en/latest/usage/  <br />
-https://clang.llvm.org/docs/analyzer/user-docs/TaintAnalysisConfiguration.html#clangsa-taint-configuration-example
+https://clang.llvm.org/docs/analyzer/user-docs/TaintAnalysisConfiguration.html#clangsa-taint-configuration-example    <br />
+https://codechecker.readthedocs.io/en/latest/analyzer/user_guide/#cross-translation-unit-ctu-analysis-mode
