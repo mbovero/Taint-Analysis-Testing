@@ -1,6 +1,5 @@
 Propagations:
   - Name: getUserInput
-    SrcArgs: [0]
     DstArgs: [-1]
 
   - Name: processInput

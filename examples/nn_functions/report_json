@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "reports": [
+    {
+      "analyzer_result_file_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/reports/example.c_clangsa_4dd5cf1986ea050e521ff9522ddcf7c4.plist",
+      "file": {
+        "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+        "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+        "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+      },
+      "line": 72,
+      "column": 5,
+      "message": "Untrusted data is passed to a user-defined sink",
+      "checker_name": "alpha.security.taint.TaintPropagation",
+      "severity": "HIGH",
+      "report_hash": "c4fc3759d3eb4acb02581c9d71ba9927",
+      "analyzer_name": "clangsa",
+      "category": "Tainted data used",
+      "type": null,
+      "review_status": "unreviewed",
+      "bug_path_events": [
+        {
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          },
+          "line": 57,
+          "column": 5,
+          "message": "Taint originated here",
+          "range": {
+            "start_line": 57,
+            "start_col": 5,
+            "end_line": 57,
+            "end_col": 32
+          }
+        },
+        {
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          },
+          "line": 57,
+          "column": 5,
+          "message": "Taint propagated to the 1st argument",
+          "range": {
+            "start_line": 57,
+            "start_col": 5,
+            "end_line": 57,
+            "end_col": 32
+          }
+        },
+        {
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          },
+          "line": 67,
+          "column": 5,
+          "message": "Taint propagated to the 2nd argument",
+          "range": {
+            "start_line": 67,
+            "start_col": 5,
+            "end_line": 67,
+            "end_col": 46
+          }
+        },
+        {
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          },
+          "line": 68,
+          "column": 5,
+          "message": "Taint propagated to the 2nd argument",
+          "range": {
+            "start_line": 68,
+            "start_col": 5,
+            "end_line": 68,
+            "end_col": 42
+          }
+        },
+        {
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          },
+          "line": 69,
+          "column": 5,
+          "message": "Taint propagated to the 2nd argument",
+          "range": {
+            "start_line": 69,
+            "start_col": 5,
+            "end_line": 69,
+            "end_col": 42
+          }
+        },
+        {
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          },
+          "line": 70,
+          "column": 5,
+          "message": "Taint propagated to the 2nd argument",
+          "range": {
+            "start_line": 70,
+            "start_col": 5,
+            "end_line": 70,
+            "end_col": 42
+          }
+        },
+        {
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          },
+          "line": 72,
+          "column": 5,
+          "message": "Untrusted data is passed to a user-defined sink",
+          "range": {
+            "start_line": 72,
+            "start_col": 19,
+            "end_line": 72,
+            "end_col": 28
+          }
+        }
+      ],
+      "bug_path_positions": [
+        {
+          "range": {
+            "start_line": 55,
+            "start_col": 5,
+            "end_line": 55,
+            "end_col": 7
+          },
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          }
+        },
+        {
+          "range": {
+            "start_line": 57,
+            "start_col": 5,
+            "end_line": 57,
+            "end_col": 11
+          },
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          }
+        },
+        {
+          "range": {
+            "start_line": 67,
+            "start_col": 5,
+            "end_line": 67,
+            "end_col": 13
+          },
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          }
+        },
+        {
+          "range": {
+            "start_line": 68,
+            "start_col": 5,
+            "end_line": 68,
+            "end_col": 8
+          },
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          }
+        },
+        {
+          "range": {
+            "start_line": 69,
+            "start_col": 5,
+            "end_line": 69,
+            "end_col": 8
+          },
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          }
+        },
+        {
+          "range": {
+            "start_line": 70,
+            "start_col": 5,
+            "end_line": 70,
+            "end_col": 8
+          },
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          }
+        },
+        {
+          "range": {
+            "start_line": 72,
+            "start_col": 5,
+            "end_line": 72,
+            "end_col": 17
+          },
+          "file": {
+            "id": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c",
+            "original_path": "/home/stm32/Program_Analysis/Clang_Taint_Analysis/examples/nn_functions/example.c"
+          }
+        }
+      ],
+      "notes": [],
+      "macro_expansions": []
+    }
+  ]
+}
+

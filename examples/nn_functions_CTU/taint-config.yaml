@@ -1,0 +1,23 @@
+Propagations:
+  - Name: getData
+    DstArgs: [0]
+
+  - Name: normalize
+    SrcArgs: [0]
+    DstArgs: [1]
+
+  - Name: conv
+    SrcArgs: [0]
+    DstArgs: [1]
+
+  - Name: relu
+    SrcArgs: [0]
+    DstArgs: [1]
+
+  - Name: pool
+    SrcArgs: [0]
+    DstArgs: [1]
+
+Sinks:
+  - Name: outputResults
+    Args: [0]

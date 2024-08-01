@@ -10,5 +10,5 @@ example.o: example.c
 	$(CC) $(CFLAGS) -c example.c
 
 clean:
-	rm -rf example example.o compile_commands.json reports report_html
+	rm -rf example example.o compile_commands.json reports reports_html
 
